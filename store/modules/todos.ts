@@ -56,10 +56,10 @@ export default class TodosStore extends VuexModule {
   }
 
   // ActionはActionデコレーションしたメソッドとして定義すれば良い
-  @Action
-  addTodoItemAction(newContent: string) {
-    this.context.commit('addTodoItem', newContent)
-  }
+  // @Action
+  // addTodoItemAction(newContent: string) {
+  //   this.context.commit('addTodoItem', newContent)
+  // }
 }
 
 export class TodoItem {

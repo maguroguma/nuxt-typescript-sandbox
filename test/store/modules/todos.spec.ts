@@ -27,6 +27,12 @@ describe('getters', () => {
 
     expect(actual).toStrictEqual(new TodoItem(1, 'AWSの勉強'))
   })
+
+  it('[Error] get todo item by id', () => {
+    expect(() => todosStore.getTodoItemById(999)).toThrow()
+    expect(() => todosStore.getTodoItemById(999)).toThrowError('Todo is not')
+    expect(() => todosStore.getTodoItemById(999)).toThrowError('Todo is not found.')
+  })
 })
 
 describe('mutations', () => {
