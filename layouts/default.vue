@@ -90,6 +90,11 @@ export default {
           title: '$onテスト',
           to: '/event/experiment',
         },
+        {
+          // icon: 'mdi-router',
+          title: 'drag & drop',
+          to: '/dragdrop/',
+        },
       ],
       miniVariant: false,
       right: true,
