@@ -80,6 +80,16 @@ export default {
           title: 'Inspire',
           to: '/inspire',
         },
+        {
+          icon: 'mdi-router',
+          title: '迷路',
+          to: '/maze',
+        },
+        {
+          // icon: 'mdi-router',
+          title: '$onテスト',
+          to: '/event/experiment',
+        },
       ],
       miniVariant: false,
       right: true,
