@@ -81,6 +81,21 @@ export default {
           to: '/inspire',
         },
         {
+          icon: 'mdi-router',
+          title: '迷路',
+          to: '/maze',
+        },
+        {
+          // icon: 'mdi-router',
+          title: '$onテスト',
+          to: '/event/experiment',
+        },
+        {
+          // icon: 'mdi-router',
+          title: 'drag & drop',
+          to: '/dragdrop/',
+        },
+        {
           icon: 'mdi-cat',
           title: 'App',
           to: '/app',
