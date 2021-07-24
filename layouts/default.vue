@@ -100,6 +100,10 @@ export default {
           title: 'App',
           to: '/app',
         },
+        {
+          title: 'Modal',
+          to: '/modal/',
+        },
       ],
       miniVariant: false,
       right: true,
