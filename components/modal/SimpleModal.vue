@@ -1,6 +1,6 @@
 <template>
-  <div id="overlay" v-show="showContent">
-    <div id="content">
+  <div id="overlay" @click="clickEvent">
+    <div id="content" @click="stopEvent">
       <p><slot></slot></p>
       <p><button @click="clickEvent">Close</button></p>
     </div>
@@ -14,6 +14,9 @@ export default Vue.extend({
   methods: {
     clickEvent() {
       this.$emit('from-child')
+    },
+    stopEvent(e: any) {
+      e.stopPropagation()
     },
   },
 })

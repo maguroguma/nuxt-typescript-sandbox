@@ -3,9 +3,11 @@
   <div>
     <button @click="openModal">Click</button>
 
-    <simple-modal v-show="showContent" @from-child="closeModal">
-      slotから入ったinnerTextです。
-    </simple-modal>
+    <transition name="fade">
+      <simple-modal v-show="showContent" @from-child="closeModal">
+        slotから入ったinnerTextです。
+      </simple-modal>
+    </transition>
   </div>
 </template>
 
@@ -34,3 +36,12 @@ export default Vue.extend({
   },
 })
 </script>
+
+<style scoped>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+</style>
