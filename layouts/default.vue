@@ -95,6 +95,11 @@ export default {
           title: 'drag & drop',
           to: '/dragdrop/',
         },
+        {
+          icon: 'mdi-cat',
+          title: 'App',
+          to: '/app',
+        },
       ],
       miniVariant: false,
       right: true,
