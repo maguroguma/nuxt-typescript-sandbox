@@ -12,7 +12,8 @@ import EmitEvent from '@/components/event/EmitEvent.vue'
 
 export default Vue.extend({
   components: {
-    ListenEvent, EmitEvent,
-  }
+    ListenEvent,
+    EmitEvent,
+  },
 })
 </script>

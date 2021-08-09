@@ -48,4 +48,3 @@ export default Vue.extend({
   background: #fff;
 }
 </style>
-
