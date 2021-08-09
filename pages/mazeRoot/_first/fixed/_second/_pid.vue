@@ -11,7 +11,7 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'pid',
+  name: 'Pid',
 
   computed: {
     first() {
@@ -25,7 +25,7 @@ export default Vue.extend({
     pid() {
       console.log(typeof this.$route.params.pid)
       return this.$route.params.pid
-    }
+    },
   },
 })
 </script>

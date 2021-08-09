@@ -2,11 +2,9 @@
   <div>
     <v-text-field :value="content" @input="editContent" />
 
-    <v-btn v-if="!isDone" @click="toggleIsDone(tid)" :id="'done-' + tid">
-      完了
-    </v-btn>
-    <v-btn v-else @click="toggleIsDone(tid)" :id="'return-' + tid">戻す</v-btn>
-    <v-btn @click="disappear(tid)" :id="'remove-' + tid">削除</v-btn>
+    <v-btn v-if="!isDone" :id="'done-' + tid" @click="toggleIsDone(tid)"> 完了 </v-btn>
+    <v-btn v-else :id="'return-' + tid" @click="toggleIsDone(tid)">戻す</v-btn>
+    <v-btn :id="'remove-' + tid" @click="disappear(tid)">削除</v-btn>
   </div>
 </template>
 

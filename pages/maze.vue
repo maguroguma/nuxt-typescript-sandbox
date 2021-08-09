@@ -1,12 +1,12 @@
 <template>
   <div>
     <h1>Routing Maze</h1>
-    <nuxt-link to='/mazeRoot/xxx/fixed/100/fixedPage'>固定ページ1</nuxt-link>
-    <nuxt-link to='/mazeRoot/yyy/fixed/200/fixedPage'>固定ページ2</nuxt-link>
-    <nuxt-link to='/mazeRoot/zzz/fixed/300/fixedPage'>固定ページ3</nuxt-link>
-    <nuxt-link to='/mazeRoot/xxx/fixed/100/math'>動的ページ1</nuxt-link>
-    <nuxt-link to='/mazeRoot/yyy/fixed/200/english'>動的ページ2</nuxt-link>
-    <nuxt-link to='/mazeRoot/zzz/fixed/300/science'>動的ページ3</nuxt-link>
+    <nuxt-link to="/mazeRoot/xxx/fixed/100/fixedPage">固定ページ1</nuxt-link>
+    <nuxt-link to="/mazeRoot/yyy/fixed/200/fixedPage">固定ページ2</nuxt-link>
+    <nuxt-link to="/mazeRoot/zzz/fixed/300/fixedPage">固定ページ3</nuxt-link>
+    <nuxt-link to="/mazeRoot/xxx/fixed/100/math">動的ページ1</nuxt-link>
+    <nuxt-link to="/mazeRoot/yyy/fixed/200/english">動的ページ2</nuxt-link>
+    <nuxt-link to="/mazeRoot/zzz/fixed/300/science">動的ページ3</nuxt-link>
 
     <div>
       <button @click="move()">正しい移動</button>
@@ -41,18 +41,16 @@ export default Vue.extend({
     },
     async propMove() {
       console.log('on!')
-      const r = await this.$router.push(
-        {
-          path: '/mazeRoot/xxx/propReceiver',
-          params: {
-            // numberprop: 222,
-            stringprop: '!!!!!!!',
-          },
-          query: {
-            numberprop: '222',
-          }
-        }
-      )
+      const r = await this.$router.push({
+        path: '/mazeRoot/xxx/propReceiver',
+        params: {
+          // numberprop: 222,
+          stringprop: '!!!!!!!',
+        },
+        query: {
+          numberprop: '222',
+        },
+      })
       console.log(r)
       console.log('end...')
     },

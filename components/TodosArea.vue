@@ -5,22 +5,12 @@
 
     <h2>TODOリスト</h2>
     <div id="todo-list">
-      <todo-item
-        v-for="id in inProgTodosIds"
-        :key="id"
-        :tid="id"
-        :id="'item-' + id"
-      ></todo-item>
+      <todo-item v-for="id in inProgTodosIds" :id="'item-' + id" :key="id" :tid="id"></todo-item>
     </div>
 
     <h2>完了したTODOリスト</h2>
     <div id="done-list">
-      <todo-item
-        v-for="id in doneTodosIds"
-        :key="id"
-        :tid="id"
-        :id="'item-' + id"
-      ></todo-item>
+      <todo-item v-for="id in doneTodosIds" :id="'item-' + id" :key="id" :tid="id"></todo-item>
     </div>
   </div>
 </template>
