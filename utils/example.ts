@@ -5,6 +5,19 @@ export class Person {
     return 'Person is Human'
   }
 
+  get random() {
+    return Math.random()
+  }
+
+  private callback() {
+    console.log('This is private callback')
+  }
+
+  callCallBack() {
+    const c = this.callback
+    c()
+  }
+
   greet() {
     return 'Hello'
   }
