@@ -5,8 +5,13 @@ export class Person {
     return 'Person is Human'
   }
 
+  // getterは毎回再計算される
   get random() {
     return Math.random()
+  }
+
+  get randomPlus() {
+    return `Value: ${String(this.random)}`
   }
 
   private callback() {
