@@ -92,6 +92,10 @@ export default {
           title: 'Modal',
           to: '/modal/',
         },
+        {
+          title: 'MessageEvent',
+          to: '/messageEvent/',
+        },
       ],
       miniVariant: false,
       right: true,
