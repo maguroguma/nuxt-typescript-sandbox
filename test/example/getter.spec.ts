@@ -7,6 +7,10 @@ describe('getter', () => {
     console.log(p.random)
     console.log(p.random)
     console.log(p.random)
+
+    console.log(p.randomPlus)
+    console.log(p.randomPlus)
+    console.log(p.randomPlus)
   })
 
   it('privateなコールバック', () => {
