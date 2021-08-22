@@ -11,10 +11,7 @@ module.exports = {
     '.*\\.(vue)$': 'vue-jest',
   },
   collectCoverage: true,
-  collectCoverageFrom: [
-    '<rootDir>/components/**/*.vue',
-    '<rootDir>/pages/**/*.vue',
-    '<rootDir>/store/**/*.ts'
-  ],
+  collectCoverageFrom: ['<rootDir>/components/**/*.vue', '<rootDir>/pages/**/*.vue', '<rootDir>/store/**/*.ts'],
   // setupFiles: ['<rootDir>/test/jest.setup.js'],
+  // preset: '@vue/cli-plugin-unit-jest/presets/typescript-and-babel',
 }
