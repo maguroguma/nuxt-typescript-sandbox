@@ -96,6 +96,14 @@ export default {
           title: 'MessageEvent',
           to: '/messageEvent/',
         },
+        {
+          title: 'Separated Option API',
+          to: '/test/',
+        },
+        {
+          title: 'Option API',
+          to: '/test/testPage',
+        },
       ],
       miniVariant: false,
       right: true,
