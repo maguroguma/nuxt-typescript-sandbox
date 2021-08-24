@@ -104,6 +104,10 @@ export default {
           title: 'Option API',
           to: '/test/testPage',
         },
+        {
+          title: 'Closure',
+          to: '/closure/',
+        },
       ],
       miniVariant: false,
       right: true,
