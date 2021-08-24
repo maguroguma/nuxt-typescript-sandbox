@@ -4,6 +4,7 @@
     <div><button @click="callIncrement">Plus Age</button></div>
     <div>Name: {{ name }}</div>
     <div><button @click="callRepeat">Repeat Name</button></div>
+    <div><button @click="incrementPageGlobalNumber">Increment Page Global Number(console)</button></div>
   </div>
 </template>
 
@@ -11,6 +12,9 @@
 import Vue from 'vue'
 
 import generator, { ClosureType } from '@/utils/closure/util'
+
+// VueRouterで遷移しても保持されるが、ブラウザのリロードなどで再度初期化される
+let pageGlobalNumber = 0
 
 export default Vue.extend({
   data() {
@@ -33,6 +37,10 @@ export default Vue.extend({
     },
     repeat(n: number) {
       this.name = this.name.repeat(n)
+    },
+    incrementPageGlobalNumber() {
+      pageGlobalNumber++
+      console.log(`ページ内グローバル変数: ${pageGlobalNumber}`)
     },
   },
 })
