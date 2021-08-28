@@ -108,6 +108,10 @@ export default {
           title: 'Closure',
           to: '/closure/',
         },
+        {
+          title: "Vue's This",
+          to: '/this/',
+        },
       ],
       miniVariant: false,
       right: true,
