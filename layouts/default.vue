@@ -108,6 +108,14 @@ export default {
           title: 'Closure',
           to: '/closure/',
         },
+        {
+          title: "Vue's This",
+          to: '/this/',
+        },
+        {
+          title: "Vue's computed",
+          to: '/computed/',
+        },
       ],
       miniVariant: false,
       right: true,
